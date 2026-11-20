@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="da">
+
+<head>
+    <!-- Fortæller browseren, at siden bruger danske tegn -->
+    <meta charset="UTF-8">
+
+    <!-- Sørger for, at siden tilpasser sig mobil, tablet og computer -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Teksten, der vises på fanen i browseren -->
+    <title>Unplug - kontakt</title>
+
+    <!-- Kobler HTML-siden sammen med vores fælles CSS-fil -->
+    <link rel="stylesheet" href="style.css">
+
+    <script src="https://kit.fontawesome.com/f1727915ec.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <!-- HEADER: Logo og navigation -->
+    <header class="site-header">
+
+        <a href="index.html" class="logo" aria-label="Unplug - gå til forsiden">
+        <img src="img/unplug logo.png" alt="">
+    </a>
+
+     <!-- Knap til hamburgermenu på mobil -->
+    <button class="menu-toggle"
+        type="button"
+        aria-label="Åbn menu"
+        aria-expanded="false"
+        aria-controls="main-navigation">
+    <span></span>
+    <span></span>
+    <span></span>
+</button>
+
+        <nav id="main-navigation" aria-label="Hovednavigation">
+            <ul>
+                <li><a href="index.html">Forside</a></li>
+                <li><a href="om-unplug.html">Om Unplug</a></li>
+                <li><a href="kontakt.html" aria-current="page">Kontakt</a></li>
+            </ul>
+        </nav>
+
+    </header>
+
+
+    <!-- MAIN: Sidens primære indhold -->
+    <main>
+
+        <!-- HERO: Introduktion til kontaktsiden -->
+        <section class="hero">
+
+            <div class="hero-content">
+
+                <p class="eyebrow">Vi er her for at lytte</p>
+
+                <h1>Du er altid velkommen til at række ud.</h1>
+
+                <p>
+                    Har du spørgsmål, tanker, feedback eller bare brug for nogle at tale med?
+                    Så er du altid velkommen til at skrive eller ringe til os.
+                </p>
+
+            </div>
+
+            <!-- Illustration på Om Unplug-siden -->
+            <div class="hero-image">
+                <i class="fa-solid fa-hand-holding-hand contact-icon" aria-hidden="true"></i>
+            </div>
+        </section>
+
+
+        <!-- KONTAKT: Kontaktinformationer og kontaktformular -->
+        <section class="contact-section">
+
+            <!-- Kontaktinformationer -->
+            <div class="contact-info">
+
+                <p class="eyebrow">Kontakt os</p>
+
+                <h2>Vi glæder os til at høre fra dig.</h2>
+
+                <p>
+                    Hos Unplug ønsker vi at skabe et trygt
+                    og imødekommende sted. Du behøver ikke have de helt rigtige ord. Det vigtigste er, at du har lyst til at række ud.
+                </p>
+
+                <div class="contact-details">
+
+                   <h3>E-mail</h3>
+                        <p>
+                            <a href="mailto:hej@unplug.dk">hej@unplug.dk</a>
+                        </p>
+
+                        <h3>Telefon</h3>
+                        <p>
+                            <a href="tel:+4522630911">+45 22 63 09 11</a>
+                        </p>
+
+                </div>
+
+            </div>
+
+
+            <!-- Kontaktformular -->
+            <div class="contact-form-container">
+
+                <h2>Skriv til os</h2>
+
+                <p>
+                    Udfyld formularen herunder.
+                </p>
+
+                <form action="#" method="post" id="contact-form">
+
+                    <!-- Label fortæller brugeren, hvad feltet skal indeholde -->
+                    <div class="form-group">
+
+                        <label for="name">Dit navn</label>
+
+                        <input
+                            type="text"
+                            id="name"
+                            name="name"
+                            autocomplete="name"
+                            required
+                        >
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="email">Din e-mail</label>
+
+                        <input
+                            type="email"
+                            id="email"
+                            name="email"
+                            autocomplete="email"
+                            required
+                        >
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="subject">Emne</label>
+
+                        <input
+                            type="text"
+                            id="subject"
+                            name="subject"
+                            required
+                        >
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="message">Din besked</label>
+
+                        <textarea
+                            id="message"
+                            name="message"
+                            rows="6"
+                            required
+                        ></textarea>
+
+                    </div>
+
+
+                    <!-- Formularen er kun en visuel prototype og sender ikke beskeder -->
+                    <button type="submit" class="button">
+                        Send besked
+                    </button>
+
+                    <p id="form-status" aria-live="polite"></p>
+
+                </form>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+   <!-- FOOTER: Sidens nederste område -->
+    <footer class="site-footer">
+
+        <a href="index.html" class="logo">
+            <img src="img/unplug logo hvid.png" alt="">
+        </a>
+
+        <p>Et lille pusterum i en stor verden.</p>
+
+        <nav aria-label="Footer navigation">
+            <a href="index.html">Forside</a>
+            <a href="om-unplug.html">Om Unplug</a>
+            <a href="kontakt.html">Kontakt</a>
+        </nav>
+
+        <p class="copyright">© 2026 Unplug</p>
+
+         <!-- Kreditering af illustrationer -->
+    <p class="credits">
+        Illustrationer:
+        <a href="https://selfmora.com/free-illustrations"
+           target="_blank"
+           rel="noopener noreferrer">Selfmora</a>
+    </p>
+
+    </footer>
+
+    <script>
+    const form = document.querySelector("#contact-form");
+    const status = document.querySelector("#form-status");
+
+    form.addEventListener("submit", function(event) {
+        event.preventDefault();
+
+        form.reset();
+
+        status.textContent = "Beskeden er sendt.";
+    });
+    </script>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

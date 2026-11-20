@@ -1,0 +1,187 @@
+
+<!DOCTYPE html>
+<html lang="da">
+
+<head>
+    <!-- Fortæller browseren, at siden bruger danske tegn -->
+    <meta charset="UTF-8">
+
+    <!-- Sørger for, at siden tilpasser sig mobil, tablet og computer -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Teksten, der vises på fanen i browseren -->
+    <title>Unplug - forside</title>
+
+    <!-- Kobler HTML-siden sammen med vores fælles CSS-fil -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- HEADER: Øverste del af hjemmesiden med logo og navigation -->
+<header class="site-header">
+
+    <a href="index.html" class="logo" aria-label="Unplug - gå til forsiden">
+        <img src="img/unplug logo.png" alt="">
+    </a>
+
+   <!-- Knap til hamburgermenu på mobil -->
+    <button class="menu-toggle"
+        type="button"
+        aria-label="Åbn menu"
+        aria-expanded="false"
+        aria-controls="main-navigation">
+    <span></span>
+    <span></span>
+    <span></span>
+</button>
+
+    <!-- Navigation mellem hjemmesidens tre separate sider -->
+    <nav id="main-navigation" aria-label="Hovednavigation">
+        <ul>
+            <li><a href="index.html" aria-current="page">Forside</a></li>
+            <li><a href="om-unplug.html">Om Unplug</a></li>
+            <li><a href="kontakt.html">Kontakt</a></li>
+        </ul>
+    </nav>
+
+</header>
+
+
+    <!-- MAIN: Her begynder sidens primære indhold -->
+    <main>
+
+        <!-- HERO: Det første store område, brugeren møder på forsiden -->
+        <section class="hero">
+
+            <div class="hero-content">
+                <p class="eyebrow">Et pusterum i en travl hverdag</p>
+
+                <h1>Du behøver ikke nå det hele i dag.</h1>
+
+                <p>
+                    Nogle gange har vi brug for at trække vejret,
+                    sænke tempoet og huske os selv på, at vi ikke
+                    behøver at være perfekte.
+                </p>
+
+                <a href="om-unplug.html" class="button">
+                    Find dit pusterum
+                </a>
+            </div>
+
+             <!-- Illustration på forsiden -->
+            <div class="hero-image">
+                  <img src="img/a-little-room-to-rest-v1.png" alt="Illustration af en kvinde, der sidder afslappet i en grøn lænestol med fødderne på en puf og drikker af et krus.">
+                    
+            </div>
+
+        </section>
+
+
+        <!-- INTRODUKTION: Præsenterer hjemmesidens emne -->
+        <section class="intro">
+
+            <p class="eyebrow">Lidt om at være menneske</p>
+
+            <h2>Det er okay ikke altid at have styr på det hele.</h2>
+
+            <p>
+                Forventninger, skole, sociale relationer og tanker
+                kan nogle gange fylde mere, end vi har lyst til.
+                Her handler det om at give sig selv plads til at
+                mærke efter og finde små pauser i hverdagen.
+            </p>
+
+        </section>
+
+
+        <!-- TRE TEMAER: Introducerer nogle af de emner, siden handler om -->
+        <section class="themes">
+
+            <div class="section-heading">
+                <p class="eyebrow">Små skridt mod mere ro</p>
+                <h2>Hvad fylder hos dig?</h2>
+            </div>
+
+            <div class="theme-grid">
+
+                <article class="theme-card">
+                    <h3>Tankemylder</h3>
+                    <p>
+                        Når tankerne kører i ring, kan det være
+                        svært at finde ro. Lær at give hovedet
+                        lidt plads.
+                    </p>
+                </article>
+
+                <article class="theme-card">
+                    <h3>Pauser</h3>
+                    <p>
+                        Du behøver ikke være produktiv hele tiden.
+                        Små pauser kan gøre en forskel.
+                    </p>
+                </article>
+
+                <article class="theme-card">
+                    <h3>Forventninger</h3>
+                    <p>
+                        Det kan være svært at leve op til egne
+                        og andres forventninger. Husk, at du
+                        gerne må være dig.
+                    </p>
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <!-- AFSLUTTENDE CTA: Leder brugeren videre til undersiden -->
+        <section class="closing-section">
+
+            <h2>Giv dig selv lov til at trække vejret.</h2>
+
+            <p>
+                Du behøver ikke finde alle svarene lige nu.
+            </p>
+
+            <a href="om-unplug.html" class="button">
+                Læs mere om Unplug
+            </a>
+
+        </section>
+
+    </main>
+
+
+    <!-- FOOTER: Sidens nederste område -->
+    <footer class="site-footer">
+
+        <a href="index.html" class="logo">
+            <img src="img/unplug logo hvid.png" alt="">
+        </a>
+
+        <p>Et lille pusterum i en stor verden.</p>
+
+        <nav aria-label="Footer navigation">
+            <a href="index.html">Forside</a>
+            <a href="om-unplug.html">Om Unplug</a>
+            <a href="kontakt.html">Kontakt</a>
+        </nav>
+
+        <p class="copyright">© 2026 Unplug</p>
+
+         <!-- Kreditering af illustrationer -->
+    <p class="credits">
+        Illustrationer:
+        <a href="https://selfmora.com/free-illustrations"
+           target="_blank"
+           rel="noopener noreferrer">Selfmora</a>
+    </p>
+
+    </footer>
+
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="da">
+
+<head>
+    <!-- Fortæller browseren, at siden bruger danske tegn -->
+    <meta charset="UTF-8">
+
+    <!-- Sørger for, at siden tilpasser sig mobil, tablet og computer -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Teksten, der vises på fanen i browseren -->
+    <title>Unplug - om side</title>
+
+    <!-- Kobler HTML-siden sammen med vores fælles CSS-fil -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- HEADER: Logo og navigation -->
+    <header class="site-header">
+
+        <a href="index.html" class="logo" aria-label="Unplug - gå til forsiden">
+        <img src="img/unplug logo.png" alt="">
+        </a>
+
+         <!-- Knap til hamburgermenu på mobil -->
+    <button class="menu-toggle"
+            type="button"
+            aria-label="Åbn menu"
+            aria-expanded="false"
+            aria-controls="main-navigation">
+        <span></span>
+        <span></span>
+        <span></span>
+    </button>   
+
+        <!-- Navigation til hjemmesidens tre sider -->
+        <nav id="main-navigation" aria-label="Hovednavigation">
+            <ul>
+                <li><a href="index.html">Forside</a></li>
+                <li><a href="om-unplug.html" aria-current="page">Om Unplug</a></li>
+                <li><a href="kontakt.html">Kontakt</a></li>
+            </ul>
+        </nav>
+
+    </header>
+
+
+    <!-- MAIN: Sidens primære indhold -->
+    <main>
+
+        <!-- HERO: Introduktion til undersiden -->
+        <section class="hero">
+
+            <div class="hero-content">
+
+                <p class="eyebrow">Om Unplug</p>
+
+                <h1>Du må gerne sætte tempoet ned.</h1>
+
+                <p>
+                    Unplug handler om at skabe plads til sig selv
+                    i en hverdag, hvor der ofte er mange ting,
+                    man skal nå og leve op til.
+                </p>
+
+                <a href="#sma-skridt" class="button">Find råd</a>
+
+            </div>
+
+            <!-- Illustration på Om Unplug-siden -->
+            <div class="hero-image">
+                <img src="img/room-to-pause-v1.png" alt="Illustration af en kvinde, der sidder i en lilla lænestol med et krus i hænderne ved siden af en stueplante.">
+            </div>
+
+        </section>
+
+
+        <!-- INTRODUKTION: Forklarer hjemmesidens formål -->
+        <section class="intro">
+
+            <p class="eyebrow">Hvorfor Unplug?</p>
+
+            <h2>Du er mere end det, du når.</h2>
+
+            <p>
+                Det kan være svært at finde ro, når skole,
+                venner, familie og egne forventninger fylder.
+                Nogle gange kan det føles, som om man hele
+                tiden skal være på og have styr på det hele.
+            </p>
+
+            <p>
+                Men du behøver ikke præstere hele tiden.
+                Det er vigtigt at give sig selv tid til at
+                koble fra og mærke efter.
+            </p>
+
+        </section>
+
+
+        <!-- STUDIEPRES: Uddyber et af de centrale emner -->
+        <section class="themes">
+
+            <div class="section-heading">
+
+                <p class="eyebrow">Når hverdagen fylder</p>
+
+                <h2>Det er okay at synes, det er svært.</h2>
+
+            </div>
+
+            <div class="theme-grid">
+
+                <article class="theme-card">
+
+                    <h3>Studiepres</h3>
+
+                    <p>
+                        Opgaver, afleveringer og eksamener kan
+                        hurtigt komme til at fylde meget.
+                        Det kan være svært at finde balancen
+                        mellem skole og fritid.
+                    </p>
+
+                </article>
+
+
+                <article class="theme-card">
+
+                    <h3>Forventninger</h3>
+
+                    <p>
+                        Nogle gange stiller vi meget høje krav
+                        til os selv. Vi vil gerne gøre det godt,
+                        men det er vigtigt at huske, at man
+                        ikke behøver være perfekt.
+                    </p>
+
+                </article>
+
+
+                <article class="theme-card">
+
+                    <h3>Tankemylder</h3>
+
+                    <p>
+                        Når mange tanker fylder på én gang,
+                        kan det være svært at slappe af.
+                        Det kan hjælpe at stoppe op og give
+                        sig selv lidt ro.
+                    </p>
+
+                </article>
+
+            </div>
+
+        </section>
+
+        <!-- ØVELSER OG RÅD: Samler alt i én afrundet sektion -->
+
+<!-- RÅD: Små råd til en lettere hverdag -->
+<section class="advice" id="sma-skridt">
+
+    <p class="eyebrow">Små skridt mod mere ro</p>
+
+    <h2>Små råd til en lettere hverdag</h2>
+
+    <p class="advice-intro">
+        Du behøver ikke ændre alt på én gang.
+        Her er nogle små ting, du kan prøve,
+        når hverdagen føles lidt overvældende.
+    </p>
+
+    <!-- De fire gode råd -->
+    <div class="advice-list">
+
+        <article>
+            <h3>1. Giv dig selv en pause</h3>
+            <p>
+                Du behøver ikke være produktiv hele tiden.
+                Tillad dig selv at holde en pause uden dårlig samvittighed.
+            </p>
+        </article>
+
+        <article>
+            <h3>2. Skriv tankerne ned</h3>
+            <p>
+                Hvis hovedet er fyldt, kan du prøve at skrive
+                det ned, der fylder lige nu.
+            </p>
+        </article>
+
+        <article>
+            <h3>3. Kom lidt væk fra skærmen</h3>
+            <p>
+                Få frisk luft, læs en bog eller bare lav noget,
+                der ikke kræver din opmærksomhed på en skærm.
+            </p>
+        </article>
+
+        <article>
+            <h3>4. Ræk ud til nogen</h3>
+            <p>
+                 Du behøver ikke klare alting selv.
+                Tal med en, du føler dig tryg ved, eller
+                <a href="#professionel-hjaelp" class="help-link">få hjælp her</a>
+            </p>
+        </article>
+
+    </div>
+
+</section>
+
+
+<!-- ØVELSER: Konkrete små pauser -->
+<section class="exercises">
+
+    <p class="eyebrow">Et øjeblik til dig selv</p>
+
+    <h2>Har du brug for en pause her og nu?</h2>
+
+    <p>
+        Prøv en af de små øvelser, og giv dig selv
+        et øjeblik til at trække vejret.
+    </p>
+
+    <div class="exercise-list">
+
+        <article>
+            <h3>1. Træk vejret</h3>
+            <p>
+                Tag tre rolige vejrtrækninger.
+                Mærk, hvordan du trækker vejret, og giv dig
+                selv et øjeblik uden andre krav.
+            </p>
+        </article>
+
+        <article>
+            <h3>2. Kom tilbage til nuet</h3>
+            <p>
+                Find fem ting, du kan se, fire ting,
+                du kan mærke og tre ting, du kan høre.
+            </p>
+        </article>
+
+        <article>
+            <h3>3. Få tankerne ud af hovedet</h3>
+            <p>
+                Skriv de tanker ned, der fylder lige nu.
+                Du behøver ikke finde løsninger på dem.
+            </p>
+        </article>
+
+    </div>
+
+</section>
+
+
+<!-- PROFESSIONEL HJÆLP: Viser hvor brugeren kan få mere støtte -->
+<section class="help-section" id="professionel-hjaelp">
+
+    <p class="eyebrow">Du behøver ikke stå alene</p>
+
+    <h2>Når du har brug for mere hjælp</h2>
+
+    <p class="help-intro">
+        Nogle gange er små pauser og gode råd ikke nok.
+        Og det er helt okay. Der findes mennesker,
+        som gerne vil hjælpe dig.
+    </p>
+
+    <div class="help-list">
+
+        <article>
+            <h3>Tal med din egen læge</h3>
+            <p>
+                Hvis stress, bekymringer eller mistrivsel fylder
+                meget i din hverdag, kan din egen læge hjælpe
+                dig med at finde den rette støtte.
+            </p>
+            <a href="https://www.sundhed.dk/">
+                Læs mere på Sundhed.dk
+            </a>
+        </article>
+
+        <article>
+            <h3>Tal med din studievejleder</h3>
+            <p>
+                Mange uddannelsessteder tilbyder vejledning,
+                hvis du oplever studiepres eller har svært
+                ved at få hverdagen til at hænge sammen.
+            </p>
+        </article>
+
+        <article>
+            <h3>Studenterrådgivningen</h3>
+            <p>
+                Studenterrådgivningen tilbyder gratis og
+                fortrolig rådgivning til studerende på
+                videregående uddannelser, der opfylder
+                deres adgangskrav.
+            </p>
+            <a href="https://srg.dk/" target="_blank" rel="noopener noreferrer">
+                Besøg Studenterrådgivningen
+            </a>
+        </article>
+
+    </div>
+
+    <div class="urgent-help">
+        <h3>Har du brug for akut hjælp?</h3>
+        <p>
+            Ved livstruende situationer skal du ringe 112.
+            Ved akut psykisk krise kan du kontakte
+            lægevagten eller akuttelefonen i din region.
+        </p>
+        <a href="https://www.sst.dk/" target="_blank" rel="noopener noreferrer">
+            Find information hos Sundhedsstyrelsen
+        </a>
+    </div>
+
+</section>
+
+
+
+        <!-- AFSLUTNING: Leder brugeren videre -->
+        <section class="closing-section">
+
+            <h2>Du behøver ikke klare alting alene.</h2>
+
+            <p>
+                Nogle gange er det første skridt bare
+                at række ud.
+            </p>
+
+            <a href="kontakt.html" class="button">
+                Kontakt os
+            </a>
+
+        </section>
+
+    </main>
+
+
+    <!-- FOOTER: Sidens nederste område -->
+    <footer class="site-footer">
+
+        <a href="index.html" class="logo">
+            <img src="img/unplug logo hvid.png" alt="">
+        </a>
+
+        <p>Et lille pusterum i en stor verden.</p>
+
+        <nav aria-label="Footer navigation">
+            <a href="index.html">Forside</a>
+            <a href="om-unplug.html">Om Unplug</a>
+            <a href="kontakt.html">Kontakt</a>
+        </nav>
+
+        <p class="copyright">© 2026 Unplug</p>
+
+         <!-- Kreditering af illustrationer -->
+    <p class="credits">
+        Illustrationer:
+        <a href="https://selfmora.com/free-illustrations"
+           target="_blank"
+           rel="noopener noreferrer">Selfmora</a>
+    </p>
+
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
